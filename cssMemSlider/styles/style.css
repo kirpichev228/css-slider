@@ -83,67 +83,6 @@ header:hover > .logo {
     height: 630px;
 }
 
-.left-slide {
-    height: 80px;
-    width: 80px;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-}
-
-.right-slide {
-    height: 80px;
-    width: 80px;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-}
-
-.button-left {
-    transform: rotate(180deg);
-    width: 52px;
-    height: 52px;
-    background: none;
-    border: 3px #fef8ed solid;
-    border-radius: 26px;
-    color: #fef8ed;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition-duration: 0.3s;
-    /* margin-right: 20px; */
-
-}
-
-.button-left:hover {
-    cursor: pointer;
-    color: #000;
-    background-color: #fef8ed;
-    transition-duration: 0.3s;
-}
-
-.button-right {
-    /* transform: rotate(180deg); */
-    width: 52px;
-    height: 52px;
-    background: none;
-    border: 3px #fef8ed solid;
-    border-radius: 26px;
-    color: #fef8ed;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition-duration: 0.3s;
-    /* margin-left: 20px; */
-}
-
-.button-right:hover {
-    cursor: pointer;
-    color: #000;
-    background-color: #fef8ed;
-    transition-duration: 0.3s;
-}
-
 .meme {
     border: 3px solid #fef8ed;
     height: 630px;
@@ -202,6 +141,7 @@ header:hover > .logo {
     margin-left: 0;
 }
 
+
 #r2:checked ~ .s1 {
     margin-left: -25%;
 }
@@ -214,19 +154,9 @@ header:hover > .logo {
     margin-left: -75%;
 }
 
-
-/* #r1:checked ~ .description::before {
-    content: "hehe";
-    color: #fef8ed;
-    width: 100px;
-    height: 50px;
+#r4:checked ~ label {
+    border-color: #171797;
 }
-#r2:checked ~ .description::before {
-    content: "haha";
-    color: #fef8ed;
-    width: 100px;
-    height: 50px;
-} */
 
 footer {
     height: 100px;
@@ -286,34 +216,6 @@ footer:hover {
     border-radius: 0;
 }
 
-.control-square {
-    width: 60px;
-    height: 60px;
-    display: flex;
-    justify-content:center;
-    align-items: center;
-    transition-duration: 0.3s;
-
-}
-
-.control-point {
-    width: 40px;
-    height: 40px;
-    border: 1px solid #fef8ed;
-    border-radius: 25px;
-    transition-duration: 0.3s;
-}
-
-.control-square:hover {
-    cursor: pointer;
-
-}
-
-.control-square:hover > .control-point {
-    background-color: #fef8ed;
-    transition-duration: 0.3s;
-}
-
 .bar {
     width: 35px;
     height: 35px;
@@ -326,6 +228,14 @@ footer:hover {
 .bar:hover {
     background-color: #fef8ed;
     transform: scale(1.3);
+}
+
+.bar:active {
+    background-color: #f30934;
+    transition: all 0.2s ease;
+    border-color: #f30934;
+    transform: scale(0.8);
+    box-shadow: 0 0 15px black;
 }
 
 input[name="r"] {
